@@ -1939,6 +1939,36 @@
     whatwg-fetch "^3.0.0"
     whatwg-url "^7.0.0"
 
+"@open-wc/building-utils@^2.8.1":
+  version "2.8.1"
+  resolved "https://registry.yarnpkg.com/@open-wc/building-utils/-/building-utils-2.8.1.tgz#d7a12d8aa0fa56a5e11c0a9eb0ab21bdb863c00b"
+  integrity sha512-pv2no0TCFBD7nUNbpA1GQ8a6IaOkQ+ghmRi/Tx0F0ks5fmxVJqiZgScNtzSHwU5jmi6FIv1Iz8uTpaBg0uGJZA==
+  dependencies:
+    "@babel/core" "^7.3.3"
+    "@babel/plugin-syntax-dynamic-import" "^7.2.0"
+    "@webcomponents/webcomponentsjs" "^2.2.10"
+    arrify "^2.0.1"
+    browserslist "^4.5.6"
+    chokidar "^3.0.0"
+    clean-css "^4.2.1"
+    clone "^2.1.2"
+    core-js-bundle "^3.1.4"
+    deepmerge "^3.2.0"
+    es-module-shims "^0.2.13"
+    html-minifier "^4.0.0"
+    lru-cache "^5.1.1"
+    minimatch "^3.0.4"
+    parse5 "^5.1.0"
+    path-is-inside "^1.0.2"
+    regenerator-runtime "^0.13.2"
+    resolve "^1.11.1"
+    rimraf "^2.6.3"
+    systemjs "^4.0.1"
+    terser "^4.0.0"
+    valid-url "^1.0.9"
+    whatwg-fetch "^3.0.0"
+    whatwg-url "^7.0.0"
+
 "@open-wc/chai-dom-equals@^0.12.36":
   version "0.12.36"
   resolved "https://registry.yarnpkg.com/@open-wc/chai-dom-equals/-/chai-dom-equals-0.12.36.tgz#ed0eb56b9e98c4d7f7280facce6215654aae9f4c"
@@ -1998,6 +2028,20 @@
     portfinder "^1.0.21"
     request "^2.88.0"
 
+"@open-wc/karma-esm@^2.5.0":
+  version "2.5.0"
+  resolved "https://registry.yarnpkg.com/@open-wc/karma-esm/-/karma-esm-2.5.0.tgz#e87ef9b6284c97b2fbee27ccd1fe094662ab6db1"
+  integrity sha512-2PHRRLLzT+oqMWYKZO1Nixba4YA6Y3tRkV4jD0pKuv2ShFrqZ8ofRGVtmo0klX1vDdEkYZ9v5ZzDsDcccmb6kA==
+  dependencies:
+    "@open-wc/building-utils" "^2.8.1"
+    babel-plugin-istanbul "^5.1.4"
+    chokidar "^3.0.2"
+    deepmerge "^3.3.0"
+    es-dev-server "^1.15.0"
+    minimatch "^3.0.4"
+    portfinder "^1.0.21"
+    request "^2.88.0"
+
 "@open-wc/prettier-config@^0.1.0":
   version "0.1.10"
   resolved "https://registry.yarnpkg.com/@open-wc/prettier-config/-/prettier-config-0.1.10.tgz#7b8ab8c2621064bbdbaee79234b3a87d6266cf42"
@@ -2036,6 +2080,25 @@
   integrity sha512-oDLCBqm8HbMnwok5/COVWmubW+UYDaWrokMOfmwmLq6eMlNnEkr3PNuKW0nII6RY5UkWaefbC4BuIWD/S6vt3w==
   dependencies:
     "@open-wc/karma-esm" "^2.4.1"
+    axe-core "^3.3.1"
+    istanbul-instrumenter-loader "^3.0.0"
+    karma "^4.0.0"
+    karma-chrome-launcher "^2.0.0"
+    karma-coverage-istanbul-reporter "^2.0.0"
+    karma-mocha "^1.0.0"
+    karma-mocha-reporter "^2.0.0"
+    karma-mocha-snapshot "^0.2.1"
+    karma-snapshot "^0.6.0"
+    karma-source-map-support "^1.3.0"
+    karma-sourcemap-loader "^0.3.0"
+    mocha "^6.2.0"
+
+"@open-wc/testing-karma@^3.1.25":
+  version "3.1.25"
+  resolved "https://registry.yarnpkg.com/@open-wc/testing-karma/-/testing-karma-3.1.25.tgz#7a3581a7714c7fbc8393afef4c3808cf7f603cc7"
+  integrity sha512-O0KLjyGELv0EBz+zmryNCVML2ghCSvfvI2NX0JK3YXQexB6R1vrTPrD8pPWjrNqwDuPk5iMrQgMtb7NojLflkw==
+  dependencies:
+    "@open-wc/karma-esm" "^2.5.0"
     axe-core "^3.3.1"
     istanbul-instrumenter-loader "^3.0.0"
     karma "^4.0.0"
@@ -4420,7 +4483,7 @@ chokidar@^2.0.2:
   optionalDependencies:
     fsevents "^1.2.7"
 
-chokidar@^3.0.0:
+chokidar@^3.0.0, chokidar@^3.0.2:
   version "3.0.2"
   resolved "https://registry.yarnpkg.com/chokidar/-/chokidar-3.0.2.tgz#0d1cd6d04eb2df0327446188cd13736a3367d681"
   integrity sha512-c4PR2egjNjI1um6bamCQ6bUNPDiyofNQruHvKgHQ4gDUP/ITSVSzNsiI5OWtHOsX323i5ha/kk4YmOZ1Ktg7KA==
@@ -5927,10 +5990,47 @@ es-dev-server@^1.14.0:
     resolve "^1.12.0"
     whatwg-url "^7.0.0"
 
+es-dev-server@^1.15.0:
+  version "1.15.0"
+  resolved "https://registry.yarnpkg.com/es-dev-server/-/es-dev-server-1.15.0.tgz#d54c62c161c907ff23c1dd598892374c6b4c932a"
+  integrity sha512-Jc1sWUhbWIhZ2mAc1tn6njkdiGtAetCr5zCL4G5Lzk7+YKMLstzHYk5v8bqFRADMj2rkSv5Z+O2fVgN5H35r9A==
+  dependencies:
+    "@babel/core" "^7.4.5"
+    "@babel/plugin-syntax-import-meta" "^7.2.0"
+    "@babel/preset-env" "^7.4.5"
+    "@open-wc/building-utils" "^2.8.1"
+    "@types/minimatch" "^3.0.3"
+    babel-plugin-bare-import-rewrite "^1.5.1"
+    camelcase "^5.3.1"
+    chokidar "^3.0.0"
+    command-line-args "^5.0.2"
+    command-line-usage "^5.0.5"
+    debounce "^1.2.0"
+    deepmerge "^3.3.0"
+    es-module-lexer "^0.3.6"
+    get-stream "^5.1.0"
+    is-stream "^2.0.0"
+    koa "^2.7.0"
+    koa-etag "^3.0.0"
+    koa-static "^5.0.0"
+    lru-cache "^5.1.1"
+    minimatch "^3.0.4"
+    opn "^5.4.0"
+    path-is-inside "^1.0.2"
+    portfinder "^1.0.21"
+    resolve "^1.12.0"
+    strip-ansi "^5.2.0"
+    whatwg-url "^7.0.0"
+
 es-module-lexer@^0.2.0:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/es-module-lexer/-/es-module-lexer-0.2.0.tgz#b0e88d22dc270dc5f8c2d426e63a42252188eee9"
   integrity sha512-HAcAIT+A5ugnSgC1pS+tgVWjlaIx8HZo8fI7xa90WdAjrJqXEZO0oszJQV3q04wCD4/ZQDlgu8nOLPxMWlaQ8g==
+
+es-module-lexer@^0.3.6:
+  version "0.3.6"
+  resolved "https://registry.yarnpkg.com/es-module-lexer/-/es-module-lexer-0.3.6.tgz#dabe3e3b2ca19e29b37d7df4008fe6107746777d"
+  integrity sha512-2pzyN7X1XOogdhTI9Yc6pHv9y1/Pq/yqD8XIFzR/2JlzNeFgOVo8cHgMFNDbFpL5xcAQGNUthgd8ED91gANUSQ==
 
 es-module-shims@^0.2.13:
   version "0.2.15"
