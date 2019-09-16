@@ -1,5 +1,5 @@
 import { expect } from '@open-wc/testing';
-import { smokeTestValidator } from '../test-helpers.js';
+import { smokeTestValidator } from '../../test-helpers.js';
 
 import {
   isString,
@@ -36,7 +36,7 @@ import {
   defaultOk,
   randomOkValidator,
   defaultOkValidator,
-} from '../src/validators.js';
+} from '../../src/legacy-validators.js';
 
 describe('LionValidate', () => {
   describe('String Validation', () => {
